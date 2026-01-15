@@ -2,18 +2,22 @@
 
 A macOS menu bar application that displays the number of GitHub PRs awaiting your review.
 
-## Installation
+![gh-menu screenshot](screenshot.png)
+
+## Quick Start
 
 ```bash
+# Clone
+git clone git@github.com:Decker87/gh-menu.git && cd gh-menu
+
+# Install
 ./install.sh
-```
 
-That's it! The script will prompt you for your GitHub API key and set everything up to run automatically on login.
-
-To uninstall:
-```bash
+# Uninstall
 ./uninstall.sh
 ```
+
+The install script will prompt you for your GitHub API key and set everything up to run automatically on login.
 
 **Logs:** `~/Library/Logs/gh-menu/gh-menu.log`
 
