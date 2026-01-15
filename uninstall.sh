@@ -50,13 +50,13 @@ fi
 # Ask about removing .env file
 if [ -f "$REPO_DIR/.env" ]; then
     echo ""
-    read -p "Remove .env file (contains your GitHub API key)? [y/N] " -n 1 -r
+    read -p "Remove .env file (contains your GitHub API key)? [Y/n] " -n 1 -r
     echo ""
-    if [[ $REPLY =~ ^[Yy]$ ]]; then
+    if [[ $REPLY =~ ^[Nn]$ ]]; then
+        echo -e "${YELLOW}⚠ Kept .env file${NC}"
+    else
         rm "$REPO_DIR/.env"
         echo -e "${GREEN}✓ Removed .env file${NC}"
-    else
-        echo -e "${YELLOW}⚠ Kept .env file${NC}"
     fi
 fi
 
