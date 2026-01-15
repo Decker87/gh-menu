@@ -1,0 +1,15 @@
+# Claude directory
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
