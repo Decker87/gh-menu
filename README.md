@@ -2,21 +2,18 @@
 
 A macOS menu bar application that displays the number of GitHub PRs awaiting your review.
 
-## Quick Start
+## Installation
 
-1. Install UV: `curl -LsSf https://astral.sh/uv/install.sh | sh`
-2. Clone this repo and cd into it
-3. Set your GitHub token: `export GH_API_KEY="your_token"` (add to `~/.zshrc` for persistence)
-4. From the repo directory, run: `nohup uv run main.py > /dev/null 2>&1 &`
-
-**Recommended:** Add this to your `~/.zshrc` so it runs automatically when you open a terminal:
 ```bash
-# Start gh-menu in background
-(cd /path/to/gh-menu && nohup uv run main.py > /dev/null 2>&1 &)
+./install.sh
 ```
-The script automatically prevents multiple instances from running.
 
-**Stop the app:** `pkill -f "uv run main.py"`
+That's it! The script will prompt you for your GitHub API key and set everything up to run automatically on login.
+
+To uninstall:
+```bash
+./uninstall.sh
+```
 
 **Logs:** `~/Library/Logs/gh-menu/gh-menu.log`
 
