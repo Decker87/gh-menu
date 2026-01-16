@@ -72,7 +72,7 @@ uv sync
 ### Running Code
 ```bash
 # Run a script with dependencies
-uv run script.py
+uv run main.py
 
 # Run a command in the virtual environment
 uv run python -c "import rumps; print(rumps.__version__)"
