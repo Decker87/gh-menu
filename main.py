@@ -123,8 +123,8 @@ class GitHubPRMenuApp(rumps.App):
                 author = oldest_pr.get("user", {}).get("login", "unknown")
                 title = oldest_pr.get("title", "")
 
-                # Truncate title to ~30 chars
-                max_title_length = 30
+                # Truncate title to ~20 chars
+                max_title_length = 20
                 if len(title) > max_title_length:
                     title = title[:max_title_length] + "..."
 
