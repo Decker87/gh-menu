@@ -118,18 +118,7 @@ class GitHubPRMenuApp(rumps.App):
             if pr_count == 0:
                 self.title = "🟢 PRs: 0"
             else:
-                # Get oldest PR details for menu bar
-                oldest_pr = items[0]
-                author = oldest_pr.get("user", {}).get("login", "unknown")
-                title = oldest_pr.get("title", "")
-
-                # Truncate title to ~20 chars
-                max_title_length = 20
-                if len(title) > max_title_length:
-                    title = title[:max_title_length] + "..."
-
-                # Show warning indicator and oldest PR info
-                self.title = f"🔴 PRs: {pr_count} | [{author}] {title}"
+                self.title = f"🔴 PRs: {pr_count}"
 
             # Clear old PR menu items
             for item in self.pr_items:
