@@ -8,6 +8,7 @@ A macOS menu bar application that displays the number of GitHub PRs awaiting you
 
 ```bash
 # Clone
+cd "$HOME/stripe/workspace"
 git clone git@github.com:Decker87/gh-menu.git && cd gh-menu
 
 # Install
